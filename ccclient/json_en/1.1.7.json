@@ -1,0 +1,20 @@
+{
+  "servers":"120.55.238.157:15010:15039,180.97.162.189:15010:15039,120.55.226.179:15010:15039,218.11.0.107:15010:15039"
+  ,"wxShareUrl":"http://a.app.qq.com/o/simple.jsp?pkgname=com.happyplay.gzmj"
+  ,"voiceUrl":"http://114.55.252.83:9111/gzmj/"
+  ,"guestLogin":false
+  ,"coinRoom":false
+  ,"canEatHu":false
+  ,"hideMoney":false
+  ,"asApp":true
+  ,"weixinBuy":"ylgz002"
+  ,"helpUrl":"http://gzmj.coolgamebox.com:800/gzmj/help.html"
+  ,"zyhelpUrl":"http://gzmj.coolgamebox.com:800/gzmj/zyhelp.html"
+  ,"sdghelpUrl":"http://gzmj.coolgamebox.com:800/gzmj/sdghelp.html"
+  ,"ashhelpUrl":"http://gzmj.coolgamebox.com:800/gzmj/ashhelp.html"
+  ,"trhelpUrl":"http://gzmj.coolgamebox.com:800/gzmj/trhelp.html"
+  ,"noticeUrl":"http://gzmj.coolgamebox.com:800/gzmj/notice.html"
+  ,"legalUrl":"http://gzmj.coolgamebox.com:800/gzmj/legal.html"
+  ,"infoUrl":"http://gzmj.coolgamebox.com:800/gzmj/info.html"
+  ,"homeScroll":"本游戏仅为休闲娱乐使用；游戏问题请联系微信号：ylgz002"
+}

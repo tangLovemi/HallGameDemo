@@ -1,0 +1,44 @@
+{
+  "servers":"116.211.169.163:15010:15039,118.178.213.86:15010:15039"
+  ,"servers2":"122.246.16.89:15010:15039,122.246.16.38:15010:15039"
+  ,"priorityLevel":"aliDunServer,aliHighDefenceServer,newHighDefenceServer"
+  ,"aliGroup":[
+    {"gNames":["gzmj1.uh0x0ly3z7.aliyungf.com"], "Times":0},
+    {"gNames":["gzmj18.CcU6KCZ8e0.aliyungf.com"], "Times":20},
+    {"gNames":["gzmj11.034Mh2E372.aliyungf.com"], "Times":100},
+    {"gNames":["gzmj12.8767a210s8.aliyungf.com"], "Times":200},
+    {"gNames":["gzmj13.mQfs6dO6U2.aliyungf.com"], "Times":300},
+    {"gNames":["gzmj14.0b42eU8GY0.aliyungf.com"], "Times":400},
+    {"gNames":["gzmj15.U4Jn7m5284.aliyungf.com"], "Times":500},
+    {"gNames":["gzmj16.79J7Nx46Rl.aliyungf.com"], "Times":700},
+    {"gNames":["gzmj17.s993noUD96.aliyungf.com"], "Times":1000},
+    {"gNames":["gzmj2.mfa33y9z1u.aliyungf.com"], "Times":2000},
+    {"gNames":["gzmj3.sw4lc708vc.aliyungf.com"], "Times":4000}
+  ]
+  ,"aliPort":"15010:15039"
+  ,"updateUrls":["sources14.happyplaygame.net","sources15.happyplaygame.net"]
+  ,"playBackServer":"gzmjhf.happyplaygame.net"
+  ,"wxShareUrl":"http://a.app.qq.com/o/simple.jsp?pkgname=com.happyplay.gzmj"
+  ,"voiceUrl":"http://114.55.252.83:9111/gzmj/"
+  ,"guestLogin":false
+  ,"coinRoom":false
+  ,"canEatHu":false
+  ,"hideMoney":false
+  ,"weixinBuy":"ylgz002"
+  ,"errorReportServer":"http://139.129.206.54:3000/gzmj"
+  ,"reportGameid":"gzmj"
+  ,"helpUrl":"http://sources14.happyplaygame.net/gzmj/help.html"
+  ,"zyhelpUrl":"http://sources14.happyplaygame.net/gzmj/zyhelp.html"
+  ,"sdghelpUrl":"http://sources14.happyplaygame.net/gzmj/sdghelp.html"
+  ,"ashhelpUrl":"http://sources14.happyplaygame.net/gzmj/ashhelp.html"
+  ,"trhelpUrl":"http://sources14.happyplaygame.net/gzmj/trhelp.html"
+  ,"maimahelpUrl":"http://sources14.happyplaygame.net/gzmj/maima.html"
+  ,"xyhelpUrl":"http://sources14.happyplaygame.net/gzmj/xy.html"
+  ,"lfhelpUrl":"http://sources14.happyplaygame.net/gzmj/laf.html"
+  ,"lpshelpUrl":"http://sources14.happyplaygame.net/gzmj/lps.html"
+  ,"wfjjhelpUrl":"http://sources14.happyplaygame.net/gzmj/wfjj.html"
+  ,"noticeUrl":"http://sources14.happyplaygame.net/gzmj/notice.html"
+  ,"legalUrl":"http://sources14.happyplaygame.net/gzmj/legal.html"
+  ,"infoUrl":"http://sources14.happyplaygame.net/gzmj/info.html"
+  ,"homeScroll":" 本游戏仅为休闲娱乐使用；游戏问题请联系微信号：ylgz002"
+}

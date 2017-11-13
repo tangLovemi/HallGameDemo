@@ -1,0 +1,8 @@
+{
+"packageUrl":       "http://sources14.happyplaygame.net/gzmj/{version}/",
+"remoteManifestUrl":"http://sources14.happyplaygame.net/gzmj/{version}/project.manifest",
+"version":"{version}",
+"engineVersion":"3.0 beta",
+"assets":{
+   {zip}
+}}
