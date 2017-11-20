@@ -1,8 +1,15 @@
 <Solution>
-  <PropertyGroup Name="mjclient" Version="3.10.0.0" Type="CocosStudio" />
+  <PropertyGroup Name="mjclient_playType2" Version="3.10.0.0" Type="CocosStudio" />
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
+        <Folder Name="home">
+          <Image Name="action.png" />
+          <Image Name="action_h.png" />
+          <Image Name="news.png" />
+          <Image Name="news_h.png" />
+          <Image Name="roleimgbg.png" />
+        </Folder>
         <Folder Name="loading">
           <Image Name="dian1.png" />
           <Image Name="dian2.png" />
@@ -11,29 +18,23 @@
           <Image Name="dian5.png" />
           <Image Name="dian6.png" />
           <Image Name="diban.png" />
-          <Image Name="floor_logo_1242x2208.png" />
           <Image Name="load.png" />
           <Image Name="LOADING_07.png" />
           <Image Name="LOADING_10.png" />
           <Image Name="LOADING_13.png" />
-          <Image Name="loading_bg.png" />
           <Image Name="loading_image.png" />
           <Image Name="logo.png" />
+          <Image Name="shaizi2.png" />
         </Folder>
         <Folder Name="login">
-          <Image Name="denglu_14.png" />
-          <Image Name="denglu_16.png" />
-          <Image Name="login_title.png" />
           <Image Name="logo.png" />
           <Image Name="z_loading.png" />
-          <Image Name="z_tongyi.png" />
-          <Image Name="z_weixindenglu.png" />
-          <Image Name="z_weixindenglu_h.png" />
-          <Image Name="z_xianliaodenglu.png" />
-          <Image Name="z_xianliaodenglu_h.png" />
         </Folder>
-        <Project Name="block.csd" Type="Layer" />
-        <Project Name="Update.csd" Type="Layer" />
+        <Folder Name="play">
+          <Image Name="gy_01.png" />
+          <Image Name="rh_01.png" />
+        </Folder>
+        <Project Name="PlayType2.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

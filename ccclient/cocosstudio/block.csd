@@ -39,7 +39,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.5007" Y="0.5013" />
             <PreSize X="0.0484" Y="0.1000" />
-            <FileData Type="Default" Path="Default/ImageFile.png" Plist="" />
+            <FileData Type="Normal" Path="loading/shaizi2.png" Plist="" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

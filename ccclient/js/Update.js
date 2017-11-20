@@ -160,7 +160,7 @@
 		UpdateResource:function(newUrl) {
 			//init 提到外面, 下次修改
 			Log("Update.js jsb.fileUtils.getWritablePath:" + jsb.fileUtils.getWritablePath());
-			manager = new jsb.AssetsManager("res/project.manifest", jsb.fileUtils.getWritablePath()+"update");
+			manager = new jsb.AssetsManager("res/main/project.manifest", jsb.fileUtils.getWritablePath()+"update");
 
 			if("undefined" !=typeof (newUrl) && null != newUrl) {
 				if("undefined" != typeof (manager.getLocalManifest().setReplaceUrl)) {

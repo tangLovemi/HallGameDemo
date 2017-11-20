@@ -9,14 +9,14 @@
           <AbstractNodeData Name="back" ActionTag="588231318" Tag="7" IconVisible="False" TopMargin="-1.8330" BottomMargin="1.8330" TouchEnable="True" LeftEage="422" RightEage="422" TopEage="237" BottomEage="237" Scale9OriginX="422" Scale9OriginY="237" Scale9Width="436" Scale9Height="246" ctype="ImageViewObjectData">
             <Size X="1280.0000" Y="720.0000" />
             <Children>
-              <AbstractNodeData Name="headImg" ActionTag="-1930564594" Tag="529" IconVisible="False" LeftMargin="245.1171" RightMargin="199.8828" TopMargin="110.5988" BottomMargin="350.4012" LeftEage="241" RightEage="241" TopEage="90" BottomEage="90" Scale9OriginX="241" Scale9OriginY="90" Scale9Width="279" Scale9Height="94" ctype="ImageViewObjectData">
-                <Size X="835.0000" Y="259.0000" />
+              <AbstractNodeData Name="headImg" ActionTag="-1930564594" Tag="529" IconVisible="False" LeftMargin="282.1171" RightMargin="236.8828" TopMargin="103.0988" BottomMargin="342.9012" LeftEage="241" RightEage="241" TopEage="90" BottomEage="90" Scale9OriginX="241" Scale9OriginY="90" Scale9Width="279" Scale9Height="94" ctype="ImageViewObjectData">
+                <Size X="761.0000" Y="274.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="662.6171" Y="479.9012" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5177" Y="0.6665" />
-                <PreSize X="0.6523" Y="0.3597" />
+                <PreSize X="0.5945" Y="0.3806" />
                 <FileData Type="Normal" Path="login/logo.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="load" ActionTag="-1820957360" Tag="194" IconVisible="False" LeftMargin="425.6028" RightMargin="520.3972" TopMargin="614.1680" BottomMargin="61.8320" LeftEage="110" RightEage="110" TopEage="14" BottomEage="14" Scale9OriginX="110" Scale9OriginY="14" Scale9Width="114" Scale9Height="16" ctype="ImageViewObjectData">

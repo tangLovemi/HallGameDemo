@@ -80,18 +80,18 @@
                   "Y": 0.6665
                 },
                 "PreSize": {
-                  "X": 0.6523,
-                  "Y": 0.3597
+                  "X": 0.5945,
+                  "Y": 0.3806
                 },
-                "LeftMargin": 245.1171,
-                "RightMargin": 199.8828,
-                "TopMargin": 110.5988,
-                "BottomMargin": 350.4012,
+                "LeftMargin": 282.1171,
+                "RightMargin": 236.8828,
+                "TopMargin": 103.0988,
+                "BottomMargin": 342.9012,
                 "Tag": 529,
                 "ActionTag": -1930564594,
                 "Size": {
-                  "X": 835.0,
-                  "Y": 259.0
+                  "X": 761.0,
+                  "Y": 274.0
                 },
                 "Name": "headImg",
                 "ctype": "ImageViewObjectData"

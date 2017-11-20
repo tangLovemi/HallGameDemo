@@ -75,8 +75,8 @@
           },
           {
             "FileData": {
-              "Type": "Default",
-              "Path": "Default/ImageFile.png",
+              "Type": "Normal",
+              "Path": "loading/shaizi2.png",
               "Plist": ""
             },
             "Scale9OriginX": 20,
@@ -174,8 +174,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "Default/ImageFile.png",
-        "loading/loading_image.png"
+        "loading/loading_image.png",
+        "loading/shaizi2.png"
       ],
       "ctype": "GameFileData"
     }

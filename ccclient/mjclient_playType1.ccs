@@ -1,0 +1,41 @@
+<Solution>
+  <PropertyGroup Name="mjclient_playType1" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="home">
+          <Image Name="action.png" />
+          <Image Name="action_h.png" />
+          <Image Name="news.png" />
+          <Image Name="news_h.png" />
+          <Image Name="roleimgbg.png" />
+        </Folder>
+        <Folder Name="loading">
+          <Image Name="dian1.png" />
+          <Image Name="dian2.png" />
+          <Image Name="dian3.png" />
+          <Image Name="dian4.png" />
+          <Image Name="dian5.png" />
+          <Image Name="dian6.png" />
+          <Image Name="diban.png" />
+          <Image Name="load.png" />
+          <Image Name="LOADING_07.png" />
+          <Image Name="LOADING_10.png" />
+          <Image Name="LOADING_13.png" />
+          <Image Name="loading_image.png" />
+          <Image Name="logo.png" />
+          <Image Name="shaizi2.png" />
+        </Folder>
+        <Folder Name="login">
+          <Image Name="logo.png" />
+          <Image Name="z_loading.png" />
+        </Folder>
+        <Folder Name="play">
+          <Image Name="gy_01.png" />
+          <Image Name="rh_01.png" />
+        </Folder>
+        <Project Name="PlayType1.csd" Type="Layer" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

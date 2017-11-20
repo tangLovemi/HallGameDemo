@@ -2,8 +2,12 @@
 //游戏开始会加载这些文件到内存
 var res = {
 
-	Update_json:"res/Update.json",
-	Block_json:"res/block.json",
+	Update_json:"res/main/Update.json",
+	Block_json:"res/main/block.json",
+	Home_json:"res/main/Home.json",
+
+	PlayType1_json:"res/playType1/PlayType1.json",
+	PlayType2_json:"res/playType2/PlayType2.json",
 
 };
 
@@ -15,6 +19,7 @@ for (var i in res) {
 var jsclient={};
 
 var UpdateLayer;
+var HomeLayer;
 
 function sendEvent(eName,ePara){ cc.eventManager.dispatchCustomEvent(eName,ePara); }
 

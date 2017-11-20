@@ -1,30 +1,9 @@
-var CoinData = {//金币场用到
-    type: 0, //类型
-    cost: 1, //获得每局消耗
-    win: 2, //获得底分
-    min: 3, //获得进入下限
-    max: 4 //获得进入上限
-}
 
 var UserInfoUIType = {
     UIF_In_Home: 1,
     UIF_In_Play: 2,
 };
 
-var MatchWrongCode = {
-    kCode_MatchFull:601,                //比赛人满
-    kCode_MatchFeeShort:602,            //比赛费用不足
-    kCode_NotInMatch: 603,              //玩家不在比赛中
-    kCode_MatchExist: 604,              //比赛已存在
-    kCode_MatchStopReg: 605,            //比赛停止报名
-    kCode_MatchNotConfig: 606,          //比赛未配置
-    kCode_AlreadyInMatch: 607,          //玩家已经在比赛中
-    kCode_MatchNotExist: 608,           //比赛不存在
-    kCode_MatchCreateLock: 609,         //比赛创建锁
-    kCode_MatchCreateRedisLock: 610,    //比赛创建锁
-    kCode_AlreadyInRoom: 38,            //已在好友房中
-    kCode_OverMaxCount:613,             //达到最大场次
-};
 
 jsclient.isPst = UserInfoUIType.UIF_In_Home;
 
