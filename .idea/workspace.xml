@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbe5378d-2794-4640-a7f0-f6ed5f263d2c" name="Default" comment="" />
+    <list default="true" id="bbe5378d-2794-4640-a7f0-f6ed5f263d2c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ccclient/js/resource.js" afterPath="$PROJECT_DIR$/ccclient/js/resource.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="HallGameDemo.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,26 +37,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resource.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="resource.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ccclient/js/resource.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+            <state vertical-scroll-proportion="1.2666667">
+              <caret line="204" column="0" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
               <folding>
                 <element signature="n#!!block;n#mylog#0" expanded="false" />
                 <element signature="n#!!block;n#doLayout#0" expanded="false" />
                 <element signature="n#!!block;n#showSize#0" expanded="false" />
                 <element signature="n#!!block;n#BindUIEvent#0" expanded="false" />
-                <element signature="e#2841#4131#0" expanded="false" />
+                <element signature="e#2780#3995#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="project.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="project.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ccclient/project.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4287411">
+            <state vertical-scroll-proportion="-12.892858">
               <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
@@ -93,8 +97,8 @@
         <option value="$PROJECT_DIR$/ccclient/js/LogoLayer.js" />
         <option value="$PROJECT_DIR$/ccclient/project.json" />
         <option value="$PROJECT_DIR$/ccclient/js/Update.js" />
-        <option value="$PROJECT_DIR$/ccclient/js/resource.js" />
         <option value="$PROJECT_DIR$/ccclient/js/app.js" />
+        <option value="$PROJECT_DIR$/ccclient/js/resource.js" />
       </list>
     </option>
   </component>
@@ -206,9 +210,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25226668" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25226668" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Kevoree Base64 Translator" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -257,7 +261,7 @@
             <element signature="n#!!block;n#doLayout#0" expanded="false" />
             <element signature="n#!!block;n#showSize#0" expanded="false" />
             <element signature="n#!!block;n#BindUIEvent#0" expanded="false" />
-            <element signature="e#2841#4131#0" expanded="false" />
+            <element signature="e#2780#3995#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -299,20 +303,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ccclient/js/resource.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-          <folding>
-            <element signature="n#!!block;n#mylog#0" expanded="false" />
-            <element signature="n#!!block;n#doLayout#0" expanded="false" />
-            <element signature="n#!!block;n#showSize#0" expanded="false" />
-            <element signature="n#!!block;n#BindUIEvent#0" expanded="false" />
-            <element signature="e#2841#4131#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ccclient/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -334,9 +324,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ccclient/project.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4287411">
+        <state vertical-scroll-proportion="-12.892858">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ccclient/js/resource.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2666667">
+          <caret line="204" column="0" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#mylog#0" expanded="false" />
+            <element signature="n#!!block;n#doLayout#0" expanded="false" />
+            <element signature="n#!!block;n#showSize#0" expanded="false" />
+            <element signature="n#!!block;n#BindUIEvent#0" expanded="false" />
+            <element signature="e#2780#3995#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

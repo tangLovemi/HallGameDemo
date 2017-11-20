@@ -1,3 +1,5 @@
+
+//游戏开始会加载这些文件到内存
 var res = {
 
 	Update_json:"res/Update.json",
@@ -87,33 +89,33 @@ function doLayout(wgt,pct,pos,off,isMax,isPar) {
 		var sc=Math.min(sw,sh);
 		sw=sc; sh=sc;
 	}
-	else 
+	else
 	{
 		var sc=Math.max(sw,sh);
 		sw=sc; sh=sc;
 	}
-	sw/=scPar;	sh/=scPar;		 
+	sw/=scPar;	sh/=scPar;
 	wgt.scaleX=sw; wgt.scaleY=sh;
-	wgt.setPosition( 
-	                 cutsize.width/scPar+screen.width*pos[0]/scPar +off[0]*size.width*sw,
-	                 cutsize.height/scPar+screen.height*pos[1]/scPar+off[1]*size.height*sh
-				   );
+	wgt.setPosition(
+		cutsize.width/scPar+screen.width*pos[0]/scPar +off[0]*size.width*sw,
+		cutsize.height/scPar+screen.height*pos[1]/scPar+off[1]*size.height*sh
+	);
 }
 
 function showSize() {
-	var size = cc.view.getFrameSize();  
-	var wsize = jsclient.size;  
+	var size = cc.view.getFrameSize();
+	var wsize = jsclient.size;
 	mylog(size.width+"/"+size.height+"/"+wsize.width+"/"+wsize.height);
 }
 function BindUIEvent(pjs,node,evt,func) {
 	cc.eventManager.addListener(cc.EventListener.create({
-			  event: cc.EventListener.CUSTOM,
-			  eventName: evt,
-			  callback: function(et)
-			  { 
-			      func.call(node,et.getUserData(),evt);   
-			  }}), node);
-   		   if(evt=="resize") func.call(node);
+		event: cc.EventListener.CUSTOM,
+		eventName: evt,
+		callback: function(et)
+		{
+			func.call(node,et.getUserData(),evt);
+		}}), node);
+	if(evt=="resize") func.call(node);
 }
 var bindFunction={
 	_event:function(pjs,node,js)
@@ -121,7 +123,7 @@ var bindFunction={
 		for(var evt in js)
 		{
 			BindUIEvent(pjs,node,evt,js[evt]);
-		   //cc.eventManager.addCustomListener(evt,func);	
+			//cc.eventManager.addCustomListener(evt,func);
 		}
 	},
 	_touch:function(pjs,node,js)
@@ -131,11 +133,11 @@ var bindFunction={
 	_click:function(pjs,node,js)
 	{
 		node.addTouchEventListener(function(btn,eT)
-		{ 
-        	if(eT==2)
+		{
+			if(eT==2)
 			{
 				js(btn,eT);
-			}				
+			}
 		},node);
 	}
 	,_visible:function(pjs,node,js)
@@ -146,21 +148,21 @@ var bindFunction={
 	,_keyboard:function(pjs,node,js)
 	{
 		cc.eventManager.addListener({
-                event: cc.EventListener.KEYBOARD,
-                onKeyPressed: js.onKeyPressed,
-                onKeyReleased:js.onKeyReleased, 
-            }, node);
+			event: cc.EventListener.KEYBOARD,
+			onKeyPressed: js.onKeyPressed,
+			onKeyReleased:js.onKeyReleased,
+		}, node);
 	}
 	,_check:function(pjs,node,js)
 	{
-	   	node.addEventListener(js,pjs);
+		node.addEventListener(js,pjs);
 	}
 	,_layout:function(pjs,node,js)
 	{
-	   var ar=[node];  for(var i=0;i<js.length;i++)ar.push(js[i]);
-	   BindUIEvent(pjs,node,"resize",function(){
-		   doLayout.apply(node,ar);
-	   });
+		var ar=[node];  for(var i=0;i<js.length;i++)ar.push(js[i]);
+		BindUIEvent(pjs,node,"resize",function(){
+			doLayout.apply(node,ar);
+		});
 	},
 	_text:function(pjs,node,js)
 	{
