@@ -2,12 +2,15 @@
 
 
 	function allUpdateFinish(){
-		Log("Update.js allUpdateFinish() begin");
+		//Log("----------------Update.js allUpdateFinish() begin");
+		jsclient.Scene.addChild(new HomeLayer());
+		//jsclient.updateui.unschedule(updateLoadingBar);
+		//jsclient.updateui.removeFromParent(true);
 	}
 
 
 	var jindu = 1;
-	function updateLoadingBar() {
+	var updateLoadingBar = function() {
 		jindu++;
 		if(jindu<=99) {
 			if(jindu !=99){
@@ -18,7 +21,6 @@
 			if(jindu>=100) {
 				bar.setPercent(100);
 				if(jsclient.updateFinishOK){
-					//jsclient.updateui.unschedule(updateLoadingBar);
 					allUpdateFinish();
 				}
 			}
@@ -154,7 +156,7 @@
 		},
 		onEnter:function () {
 			this._super();
-			jsclient.updateui.schedule(updateLoadingBar,0.01);
+			jsclient.updateui.schedule(updateLoadingBar, 0.01);
 			jsclient.updateui.UpdateResource("sources14.happyplaygame.net");
 		},
 		UpdateResource:function(newUrl) {
