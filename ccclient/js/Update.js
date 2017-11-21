@@ -2,9 +2,9 @@
 
 
 	function allUpdateFinish(){
-		//Log("----------------Update.js allUpdateFinish() begin");
+		Log("----------------Update.js allUpdateFinish() begin");
 		jsclient.Scene.addChild(new HomeLayer());
-		//jsclient.updateui.unschedule(updateLoadingBar);
+		jsclient.updateui.unschedule(updateLoadingBar);
 		//jsclient.updateui.removeFromParent(true);
 	}
 
