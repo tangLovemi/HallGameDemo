@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.happyplay.mypro"
+          android:versionCode="1"
+          android:versionName="1.0"
+          android:installLocation="auto">
+  <uses-sdk android:minSdkVersion="11" />
+  <uses-feature android:glEsVersion="0x00020000" />
+  <application
+      	  android:name="org.cocos2dx.javascript.AppApplication"
+          android:label="@string/app_name"
+          android:icon="@drawable/icon">
+    <!-- Tell NativeActivity the name of our .so -->
+    <meta-data android:name="android.app.lib_name" android:value="cocos2djs" />
+    <activity android:name="org.cocos2dx.javascript.AppActivity" 
+        android:taskAffinity="com.happyplay.gzmj" 
+        android:launchMode="singleTask"
+        android:label="@string/app_name"  
+        android:exported="true"   
+        android:screenOrientation="landscape" 
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+        android:configChanges="orientation">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+      <intent-filter>
+          <action android:name="android.intent.action.VIEW"/>
+          <category android:name="android.intent.category.DEFAULT"/>
+          <category android:name="android.intent.category.BROWSABLE"/>
+          <data android:scheme="com.happyplay.gzmj"/>
+      </intent-filter>
+    </activity>
+  
+    <activity android:name="com.happyplay.gzmj.wxapi.WXEntryActivity" android:label="@string/app_name" 
+         android:exported="true"/>
+
+	
+     <!--高德可以-->
+    <service android:name="com.amap.api.location.APSService"></service>
+    <meta-data android:name="com.amap.api.v2.apikey" android:value="88e4058a548c53db0e72d398e607c95e"/>    
+    
+      <!-- xianliao -->
+      <activity android:name="org.cocos2dx.javascript.XianLiaoActivity"
+                android:screenOrientation="sensorLandscape"
+                android:configChanges="orientation"
+                android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+          <intent-filter>
+              <action android:name="android.intent.action.VIEW" />
+              <category android:name="android.intent.category.DEFAULT"/>
+              <category android:name="android.intent.category.BROWSABLE"/>
+              <data android:scheme="paraches"
+                    android:host="xianliao8uk2EoiF5oAqmzRN"/>
+          </intent-filter>
+      </activity>
+      <activity
+              android:name="com.happyplay.gzmj.sgapi.SGEntryActivity"
+              android:exported="true">
+      </activity>
+    
+    <!--                   百度推送                                                                  -->
+    
+    
+    <!-- 在百度开发者中心查询应用的API Key -->
+        <meta-data
+            android:name="api_key"
+            android:value="wTFmeBdnvN1PECfawlSdMNKp" />
+        
+        <!-- push富媒体，使用富媒体推送必须声明 -->
+        <activity
+            android:name="com.baidu.android.pushservice.richmedia.MediaViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="MediaViewActivity"></activity>
+        <activity
+            android:name="com.baidu.android.pushservice.richmedia.MediaListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="MediaListActivity"
+            android:launchMode="singleTask"></activity>
+        <!-- push富媒体结束 -->    
+
+        <!-- 此处Receiver名字修改为当前包名路径 -->
+        <receiver android:name="com.happyplay.gzmj.PushReceiver">
+            <intent-filter>
+                <!-- 接收push消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <!-- 接收bind,unbind,fetch,delete等反馈消息 -->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+
+        <!-- push必须的receviver和service声明 -->
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+                <!-- 以下四项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1">
+            <intent-filter android:priority="1000">
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.baidu.android.pushservice.CommandService"
+            android:exported="true" />
+
+        <!-- 适配Android N系统必需的ContentProvider声明，写权限包含应用包名-->
+        <provider
+            android:name="com.baidu.android.pushservice.PushInfoProvider"
+            android:authorities="com.happyplay.gzmj.bdpush"
+            android:exported="true"
+            android:protectionLevel="signature"
+            android:writePermission="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.happyplay.gzmj" /> 
+            
+    <!--                   百度推送                                                                  -->
+  </application>
+  
+  
+  <supports-screens android:anyDensity="true" 
+      android:smallScreens="true" 
+      android:normalScreens="true" 
+      android:largeScreens="true" 
+      android:xlargeScreens="true" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.VIBRATE" />  
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="MODIFY_AUDIO_SETTINGS"/>
+  <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+  
+  <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+  
+  <!--地图包、搜索包需要的基础权限-->
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"  />
+  <permission android:name="android.permission.WRITE_APN_SETTINGS" />
+  <!--定位包、导航包需要的额外权限（注：基础权限也需要）-->
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+  <!-- JPush Optional for location -->
+  <uses-permission android:name="android.permission.GET_TASKS" />
+
+  <!-- record -->
+  <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+  <uses-permission android:name="android.permission.BLUETOOTH" />
+  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+  
+  <!-- Push service 运行需要的权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <!-- 富媒体需要声明的权限 -->
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+
+    <!-- 适配Android N系统必需的ContentProvider写权限声明，写权限包含应用包名 -->
+    <uses-permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.happyplay.gzmj"/>
+    <permission
+            android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.happyplay.gzmj"
+            android:protectionLevel="normal">
+    </permission>
+    
+   
+</manifest>

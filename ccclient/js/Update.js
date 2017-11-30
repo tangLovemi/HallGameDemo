@@ -5,7 +5,7 @@
 		Log("----------------Update.js allUpdateFinish() begin");
 		jsclient.Scene.addChild(new HomeLayer());
 		jsclient.updateui.unschedule(updateLoadingBar);
-		//jsclient.updateui.removeFromParent(true);
+		jsclient.updateui.removeFromParent(true);
 	}
 
 
